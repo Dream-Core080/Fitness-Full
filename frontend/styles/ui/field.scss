@@ -1,0 +1,26 @@
+.form-group {
+  @apply relative;
+  input, textarea {
+    @apply w-full rounded-xl border border-dark py-2 text-[#E5E5E5]
+        px-3 bg-black text-sm leading-sm focus:bg-black
+        focus:hover:border-tertiary;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active {
+    -webkit-text-fill-color: #E5E5E5;
+    transition: background-color 1000s ease-in-out 0s;
+    @apply bg-black
+  }
+  svg {
+    @apply absolute top-3 right-3 z-[1] cursor-pointer;
+  }
+  .text-danger {
+    @apply absolute
+  }
+}
+
+.fieldLabel {
+  @apply text-xs font-medium text-label block mb-2;
+}
